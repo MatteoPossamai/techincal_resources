@@ -5,6 +5,10 @@ A tree is a data structure that starts from the root and branches out into leave
 A tree can be divided in levels, that depends on the heigth of the actual node. The nodes are called partend and child when descripting their relationship. The highest is the partent, the lowest is the child.
 The height of a node are the element between the element itself and the leaves. The Depth of a node is the number of edges between the node and the root. The height of a tree is the height of the root.
 
+The search takes O(n) because you need to traverse the entire tree searching for the specific node. The deletion is usually a search followed by a deletion of the node.  There may be issues with the deletion of the node, because the node may have children. So, if you want to keep data, you need to upgrade childsa and get rid of voids.
+
+Inserting an element if there is no specific order is simple. You just need to add the element to the end of the tree. If there is a specific order, you need to find the right place for the element.
+
 ## PROS
 
 1. His structure can be used in a lot of cases depending of some more carateristics
