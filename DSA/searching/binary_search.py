@@ -17,8 +17,8 @@ def binary_search(array, element):
 
 # GeeksForGeeks version
 def binarySearch(array, target): 
-    low = array[0]
-    high = array[len(array)-1]
+    low = 0
+    high = len(array)-1
     if array[0] == target:
             return 0
     elif array[len(array)-1] == target:
@@ -38,16 +38,16 @@ if __name__ == "__main__":
     l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     #Testing
     print("HERE SHOULD BE TRUE")
-    print(binary_search(l, 1))
-    print(binary_search(l, 2))
-    print(binary_search(l, 3))
-    print(binary_search(l, 4))
-    print(binary_search(l, 5))
-    print(binary_search(l, 6))
-    print(binary_search(l, 7))
-    print(binary_search(l, 8))
-    print(binary_search(l, 9))
+    print(binarySearch(l, 1))
+    print(binarySearch(l, 2))
+    print(binarySearch(l, 3))
+    print(binarySearch(l, 4))
+    print(binarySearch(l, 5))
+    print(binarySearch(l, 6))
+    print(binarySearch(l, 7))
+    print(binarySearch(l, 8))
+    print(binarySearch(l, 9))
     print("HERE SHOULD BE FALSE")
-    print(binary_search(l, 10))
-    print(binary_search(l, -1))
-    print(binary_search(l, 50))
+    print(binarySearch(l, 10))
+    print(binarySearch(l, -1))
+    print(binarySearch(l, 50))
