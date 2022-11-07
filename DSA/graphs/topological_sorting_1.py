@@ -39,6 +39,7 @@ visited_list['d'] = False
 visited_list['e'] = False
 
 if __name__ == '__main__':
+    print(adjancency_list)
     for vertex in visited_list:
         topological_sort(vertex)
     print(output_stack)

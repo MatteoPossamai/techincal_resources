@@ -1,5 +1,5 @@
 class Solution:
-    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+    def findOrder(self, numCourses: int, prerequisites):
         prereq = {c:[] for c in range(numCourses)}
         output = []
         visit, cycle = set(), set()

@@ -91,6 +91,11 @@ Linked Lists can also be doubly, that means that they also have a pointer to the
 
 A linked list can also be circular, if the last element points to the first element. This is useful when you need to traverse the list in a circular way.
 
+## TECHNIQUES
+
+1. You can use a linked list to implement a stack or a queue.
+2. It is ofter used a dummy node to simplify the code. This is a node that is not part of the linked list, but it is used to simplify the code. For example, when you need to delete the first element of the list, you can use a dummy node that points to the first element of the list. This way, you don't need to check if the first element is the one you want to delete. You can just delete the next element of the dummy node.
+
 ## RESOURCES
 - [Linked List](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
 - [Doubly Linked List](https://www.geeksforgeeks.org/doubly-linked-list/)

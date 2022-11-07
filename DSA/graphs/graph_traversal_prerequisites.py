@@ -1,10 +1,11 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites) -> bool:
+        # Mapping prerequisites
         prerMap = {i:[] for i in range(numCourses)}
-
         for course, prereq in prerequisites:
             prerMap[course].append(prereq)
 
+        # Check if it is visited
         visitSet = set()
 
         def dfs(crs):
