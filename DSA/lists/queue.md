@@ -2,6 +2,9 @@
 
 Queues are data structures that uses a FIFO approach. It means that the Fist In the queue is also the First that goes Out of it. It has a head and a tail, that rappresent the first element and the last element stored in it. To add an element on the bottom of the queue, you need to Equeue it, while to put it away from the top of the queue, you need to dequeue it. These are the basics operations you can do with a queue. 
 
+## IMPLEMENTATION
+
+Usually, queue are implemented using linked lists, but they can also be implemented using arrays. Linked lists are preferred because are more performant in the tasks needed for this data structure.
 ## PROS
 1. The enqueue and dequeue takes constant time O(1)
 

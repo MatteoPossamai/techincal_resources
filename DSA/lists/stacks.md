@@ -2,6 +2,9 @@
 
 Stacks are data structures mainly used to store data and that ultimately cares the most about the most recent element added to the stack itself. It imlpements a LIFO (Last In First Out) policy. It means that the last element added to the stack will be the first one to be removed from the stack. It is quite similar to a stack of plates, where the last plate you put on the stack will be the first one to be removed from the stack. It can be implemented also with other data structures like Linked Lists and arrays. The two main operation that a stack can perform are: push and pop. Push is used to add an element to the stack, while pop is used to remove an element from the stack.
 
+## IMPLEMENTATION
+
+Stacks can be implemented using arrays or linked lists. It is usually preferred a dynamic array, because if is easier to use and the performance does not change at all. It uses also less space overall. 
 ## PROS
 1. It is very fast to add and remove elements from the stack, in fact it takes O(1) time.
 2. Good for use cases where you need to keep track of the most recent element added to the stack.
