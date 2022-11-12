@@ -4,6 +4,8 @@ Linked lists are data structures that looks like chains. Each element of the lis
 The last node of the list points to null. You don't know the length of a liked list a priori, but you need to compute it. This can be done in O(n) time.
 It is quite better when it comes to adding and deleting elements in the middle of the list, but it is quite expensive when it comes to accessing an element (O(n)).
 
+In memory, a linked list is not stored all in contiguous memory, but it is stored in different places in memory. This makes it harder to access the elements of the list, but it makes it easier to add and delete elements in the middle of the list.
+
 ## PROS
 1. It is quite easy to add and delete elements in every position in the linked list.
 
@@ -21,6 +23,9 @@ It is quite better when it comes to adding and deleting elements in the middle o
 | Operation | Time Complexity |
 |-----------|-----------------|
 | Access    | O(n)            |
+| Set       | O(n)            |
+| Init      | O(n)            |
+| Traverse  | O(n)            |
 | Search    | O(n)            |
 | Insert    | O(1)            |
 | Delete    | O(1)            |
@@ -62,7 +67,7 @@ class LinkedList:
                     return
                 current = current.next
 
-    def print(self):
+    def print_list(self):
         current = self.head
         while current is not None:
             print(current.value)
@@ -81,7 +86,7 @@ ll.add(4)
 ll.delete(2)
 
 # Print the linked list
-ll.print()
+ll.print_list()
 
 ## FOR MORE COMPLETE CODE, CHECK THE FILE linked_list.py IN THIS DIRECTORY
 ```
