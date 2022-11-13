@@ -4,6 +4,12 @@ A graph is a data structure that is used to describe relationships between objec
 
 In a graph there may be cycles, which are cases into you can reach a node from itself. There may also be isolated nodes, which are nodes that are not connected to any other node. There are types of graphs that does not have any cycle, like DAG (Directed Acyclic Graph). There are also types of graphs that does not have any isolated nodes, like trees.
 
+## TABLE OF COMPLEXITY
+| Operation | Time Complexity |
+|-----------|-----------------|
+| Storing   | O(V+E)          |
+| Traversing| O(V+E)          |
+
 ### CONNECIVITY
 
 Graphs may be:
