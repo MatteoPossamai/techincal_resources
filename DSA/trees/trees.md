@@ -9,6 +9,10 @@ The search takes O(n) because you need to traverse the entire tree searching for
 
 Inserting an element if there is no specific order is simple. You just need to add the element to the end of the tree. If there is a specific order, you need to find the right place for the element.
 
+## TREES NAMES BASED ON THE NUMBER OF CHILDREN
+
+If a tree can have at most two child, it is called a binary tree, if it can have at most three children, it is called a ternary tree, and then you can call a tree a k-ary tree if it can have at most k children.
+
 ## PROS
 
 1. His structure can be used in a lot of cases depending of some more carateristics
@@ -27,6 +31,22 @@ Inserting an element if there is no specific order is simple. You just need to a
 
 1. When another data structure easier to handle is better (most of the cases)
 
+## BALANCED TREES
+
+A tree is considered balanced when the complexity of the traversal of only half of the tree, is around O(log n), meaning that each time it cut the tree in half. So, in easier words, the tree is balanced when the height of the tree is O(log n).
+
+## COMPLETE TREES
+
+A tree is considere complete when each spot of the tree is filled, except the last level. The last level is filled from left to right. 
+
+## FULL TREES
+
+A tree is considered full when each node has either 0 or k children, when we use k as the nomber of children that the given tree can have in the largest case.
+
+## PERFECT TREES
+
+A tree is considered perfect when all the leaves have the same depth. It is also a complete tree.
+
 ## TABLE OF TIME COMPLEXITY
 
 | Operation | Time Complexity |
@@ -34,6 +54,11 @@ Inserting an element if there is no specific order is simple. You just need to a
 | Search    | O(n)            |
 | Insert    | O(n)            |
 | Delete    | O(n)            |
+| Storage   | O(n)            |
+| Traversal | O(n)            |
+| Half Trav | O(log n)        |
+| Height    | O(n)            |
+| Depth     | O(n)            |
 
 Other more specific trees types has different complexities and use cases. 
 
